@@ -5,11 +5,11 @@ int cat(char* name) {
     FILE* f = fopen(name, "r");
     if(!f) {
        //file not found
-       printf("cat: %s: No such file or directory");
+       printf("cat: %s: No such file or directory\n", name);
        return 1;
     }
     char line[256];
-    while(fgets(line, sizeof(line), f) {
+    while(fgets(line, sizeof(line), f)) {
           printf("%s", line);
     }
     fclose(f);
