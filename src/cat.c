@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
         int status = cat(input);
         //Only save failure (return code 1)
         //default is success
-        if(!succeeded){ succeeded = status}
+        if(!succeeded){ succeeded = status;}
     }
     return succeeded;
 }
